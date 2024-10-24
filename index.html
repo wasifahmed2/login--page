@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-form">
+        <div action="">
+            <h1>Login</h1>
+            <div class="inp-box">
+                <input type="text" id="user" required placeholder="username">
+                <i class="ri-user-fill"></i>
+            </div>
+            <div class="inp-box">
+                <input type="password" id="pass" required placeholder="password">
+                <i onclick="iconChange(this)" class="ri-lock-password-fill"></i>
+                <!-- <i class="ri-lock-unlock-line"></i> -->
+            </div>
+            <div class="remember-forget">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password? </a>
+            </div>
+            <button class="btn" type="button" onclick="onSubmit()">Login</button>
+            <div class="register-link">
+                <p>dont have an account?
+                <a href="#">Register</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
